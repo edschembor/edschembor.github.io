@@ -1,4 +1,4 @@
-id,host,app,host_type,virtual,desktop,os,os_release,os_verison,host_model,location,ip,host_serial
+id,host,app,host_type,virtual,desktop,os,os_release,os_version,host_model,location,ip,host_serial
 1,XSAQ0560,SMD,Server,N,N,AIX,12,5.3,9117-570,SOMERSET,10.9.49.161,109187D
 2,XSAQ0560,SMD,Server,N,N,AIX,12,5.3,9117-570,SOMERSET,192.168.24.22,109187D
 3,XSAQ0560,SMD,Server,N,N,AIX,12,5.3,9117-570,SOMERSET,10.9.49.160,109187D
