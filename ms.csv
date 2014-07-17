@@ -1,29 +1,29 @@
-originator,postname,reply,replyLoc,reply1,replyLoc1,replike1,replikeLoc1
-Suresh Kumar CIO,Design Thinking,Krishnapradeep Sukapurathmadathil,101 Barclays,Arun Jesudoss S Christian,"Chennai Tidel Park, No. 4",Prakash Ramanathan,"Chennai Tidel Park, No. 4"
-Suresh Kumar CIO,Design Thinking,Krishnapradeep Sukapurathmadathil,101 Barclays,Carlitos Datuin,101 Barclays,temp,temp
-Suresh Kumar CIO,Design Thinking,Krishnaswamy Mohanakrishnan,"Chennai Tidel Park, No. 4",Christopher Kile,"King of Prussia, PA",temp,temp
-Suresh Kumar CIO,Design Thinking,Mohan Narayanaswamy,"Chennai Tidel Park, No. 4",David R Silvester,500 Grant St,Deborah Ann Lorenzen,1 Wall
-Suresh Kumar CIO,Design Thinking,Bart J Biamonte,500 Ross St,Laurianna Kaler,"Oriskany, NY",temp,temp
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Bart J Biamonte,500 Ross St,Rebecca J Duffy,500 Grant St
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Ramesh Samarasam,"Chennai Tidel Park, No. 4"
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Christopher Kile,"King of Prussia, PA"
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Angelina Tiong,Singapore
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Swamy Kocherlakota,"Jersey City, NJ"
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,temp,temp
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,temp,temp
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,temp,temp
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,temp,temp
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,temp,temp
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,temp,temp
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,temp,temp
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,temp,temp
-Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,temp,temp
-Suresh Kumar CIO,Design Thinking,Michael R Hoffman,101 Barclays,Christopher Kile,"King of Prussia, PA",temp,temp
-Suresh Kumar CIO,Design Thinking,Michael R Hoffman,101 Barclays,Christopher Kile,"King of Prussia, PA",temp,temp
-Suresh Kumar CIO,Design Thinking,Jane A Nicolette,500 Ross St,Suresh Kumar CIO,1 Wall,temp,temp
-Suresh Kumar CIO,Design Thinking,Jane A Nicolette,500 Ross St,Carlitos Datuin,101 Barclays,Christopher Kile,"King of Prussia, PA"
-Suresh Kumar CIO,Design Thinking,Jane A Nicolette,500 Ross St,Carlitos Datuin,101 Barclays,temp,temp
-Suresh Kumar CIO,Design Thinking,Jane A Nicolette,500 Ross St,Carlitos Datuin,101 Barclays,temp,temp
-Suresh Kumar CIO,Design Thinking,Jane A Nicolette,500 Ross St,Lakshmisudha Shanmugam,Chennai Ascendas Intl Tech Park,temp,temp
-Suresh Kumar CIO,Design Thinking,Navamani Solairajan,Chennai Ascendas Intl Tech Park,Sarbartha Roy,Chennai Ascendas Intl Tech Park,Navamani Solairajan,Chennai Ascendas Intl Tech Park
-Suresh Kumar CIO,Design Thinking,Srikanth Srinivasan,"Brooklyn, NY",Lucille M Mayer,101 Barclays,Srikanth Srinivasan,"Brooklyn, NY"
+originator,postname,reply,replyLoc,reply1,replyLoc1,reply1Bus,reply1like,reply1likeLoc,reply1likeBus
+Suresh Kumar CIO,Design Thinking,Krishnapradeep Sukapurathmadathil,101 Barclays,Arun Jesudoss S Christian,"Chennai Tidel Park, No. 4",Client Tech Solutions,Prakash Ramanathan,"Chennai Tidel Park, No. 4",Client Tech Solutions
+Suresh Kumar CIO,Design Thinking,Krishnapradeep Sukapurathmadathil,101 Barclays,Carlitos Datuin,101 Barclays,Client Tech Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Krishnaswamy Mohanakrishnan,"Chennai Tidel Park, No. 4",Christopher Kile,"King of Prussia, PA",Client Tech Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Mohan Narayanaswamy,"Chennai Tidel Park, No. 4",David R Silvester,500 Grant St,Client Tech Solutions,Deborah Ann Lorenzen,1 Wall,University
+Suresh Kumar CIO,Design Thinking,Bart J Biamonte,500 Ross St,Laurianna Kaler,"Oriskany, NY",Global Operations,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Bart J Biamonte,500 Ross St,Client Tech Solutions,Rebecca J Duffy,500 Grant St,Client Tech Solutions
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,Ramesh Samarasam,"Chennai Tidel Park, No. 4",Client Tech Solutions
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,Christopher Kile,"King of Prussia, PA",Client Tech Solutions
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,Swamy Kocherlakota,"Jersey City, NJ",Client Tech Solutions
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Ryan Vojir,101 Barclays,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Michael R Hoffman,101 Barclays,Christopher Kile,"King of Prussia, PA",Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Michael R Hoffman,101 Barclays,Christopher Kile,"King of Prussia, PA",Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Jane A Nicolette,500 Ross St,Suresh Kumar CIO,1 Wall,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Jane A Nicolette,500 Ross St,Carlitos Datuin,101 Barclays,Client Technology Solutions,Christopher Kile,"King of Prussia, PA",Client Tech Solutions
+Suresh Kumar CIO,Design Thinking,Jane A Nicolette,500 Ross St,Carlitos Datuin,101 Barclays,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Jane A Nicolette,500 Ross St,Carlitos Datuin,101 Barclays,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Jane A Nicolette,500 Ross St,Lakshmisudha Shanmugam,Chennai Ascendas Intl Tech Park,Client Technology Solutions,temp,temp,temp
+Suresh Kumar CIO,Design Thinking,Navamani Solairajan,Chennai Ascendas Intl Tech Park,Sarbartha Roy,Chennai Ascendas Intl Tech Park,Client Technology Solutions,Navamani Solairajan,Chennai Ascendas Intl Tech Park,Client Tech Solutions
+Suresh Kumar CIO,Design Thinking,Srikanth Srinivasan,"Brooklyn, NY",Lucille M Mayer,101 Barclays,Client Technology Solutions,Srikanth Srinivasan,"Brooklyn, NY",Client Tech Solutions
