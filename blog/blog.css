@@ -1,0 +1,29 @@
+div.banner {
+padding-left: 2%;
+background-color: black;
+height: 3%;
+}
+
+.home {
+width: 80%;
+margin-left: 10%;
+}
+
+.writing {
+width: 80%;
+margin-left: 10%;
+}
+
+body {
+margin: 0;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+a.banner_link {
+color: white;
+text-decoration: none;
+}

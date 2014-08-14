@@ -1,17 +1,24 @@
----
-layout: default
-title: Ed Schembor Blog
----
+<html>
 
-<div>
-<a href="http://edschembor.github.io/"> < Go Back </a>
+<head>
+<title> Schembor Blog </title>
+<link rel="stylesheet" href="./blog.css" type="text/css" />
+</head>
+
+<body>
+
+<div class="banner">
+<a class="banner_link" href="http://edschembor.github.io"> Main Site </a>
 </div>
 
-<div id="home">
+
+<div class="home">
+  <p> Welcome to my simple blog in which I post code, projects, and ramblings </p>
   <h1>Index of Articles</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <p><a href="./internship_reflection.html">07/22/14 - Internship Reflection </a></p>
+  <p><a href="./college_nba_relations.html"> 07/26/14 - Graphing NBA-College Relations </a></p>
 </div>
+
+</body>
+
+</html>
