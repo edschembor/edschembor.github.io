@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<title> Schembor Blog </title>
+<link rel="stylesheet" href="./blog.css" type="text/css" />
+</head>
+
+<body>
+
+<div class="banner">
+<a href="http://edschembor.github.io" class="banner_link"> Main Site </a>
+<a href="./index.html" class="banner_link"> Blog Home </a>
+</div>
+
+
+<div class="writing">
+<h1> Visualizing NBA-NCAA Relations with Gephi </h1>
+<p> In a previous blogpost, I talked about my interest in NBA-NCAA team realtions (ie. does one NBA team tend to be filled with players from a certain college). Using the Neo4j graph DB, I dumped in data and looked at the results. </p>
+However, I keep being bothered by how unhelpful the Neo4j visualizations were in actually finding insights. Of course, for any true insights, we must turn to quanitative analyses of the graph, but its still nice to have a picture tell part of the story.
+So, due to Neo4j's still-in-development visualization tools (literally in development - if you follow the projects github page, you will see the visualization tools are getting a big update in the next release), I am turning to a tool which is specifically
+for visualizing graphs and the data in graph DBs - <a href="https://gephi.github.io/"> Gephi </a>. <p>
+<p> To transfer the DB data from Neo4j to Gephi, I simply edited the csv so it only contained teams and imported it as an edges table. I also could have used the <a href="https://github.com/jexp/neo4j-shell-tools"> Neo4j Shell Tools </a> plugin to export
+the data as a graphML file and then imported it to Gephi. </p>
+<p> After getting the data into Gephi, I took some time to format the visualization (ie. color nodes, size edges). I also played around with different graph layout algorithms and settled on the Yifan Hu layout as it looked best with this data. </p>
+<p> Here is the visualized graph: </p>
+<center><img src="./images/nba_3.png" /></center>
+
+<p> This graph complete graph is much nicer than having to look at individual team graphs. We can gather some insights, such that the most of the players from the current NY Knicks* roster skipped college and that the Magic, Pacers, and Hawks attract a lot of players who went to schools which to not send many players to the NBA. </p>
+<p> Future work: Look into understanding which layout algorithms to use in various cases and somehow format the teams to show win percentage. I would like to also one day create a more in depth graph which shows how players change teams over time (time series analysis is supported in Gephi). </p>
+<p> * Also known as the greatest team ever </p>
+
+</div>
+
+</body>
+
+</html>
