@@ -15,25 +15,56 @@
 
 <div class="writing">
 <h1> Using OpenCV to Tell If My Laundry Is Done </h1>
-<p> The dryer in my house has a setting where it continues until your clothes are a certain
+<p> I hate not knowing when my laudnry is done. The dryer in my house has a setting where it continues until your clothes are a certain
 amount dry, as opposed to a hard time limit. Because of this, I never know when my laundry is done and end up
 unnecessarily checking the machine multiple time. So, I decided to dabble in computer vision and see if I could
 set up a webcam to watch the machine's dial and see if it had finished.</p>
 
-<p> <a href="http://opencv.org/">OpenCV</a> is an opensource computer vision library, with C++, C, Python, and Java interfaces. It also has a pretty good tutorial/documentation community.</p>
+<p> <a href="http://opencv.org/">OpenCV</a> is the opensource computer vision library which I decided to use for this project because of its Python interface and great tutorial/documentation community. Go check out the project if this is your first time hearing of it, it's really cool.</p>
 
-<p> FUTURE VISUAL OF THE MACHINE WITH CAPTION </p>
+<p> My first step was to get an image of the machine's dial in the completed position (see below). Once I had that, I could
+compare it to the image from the webcam. Since the dial ticks were small, I added a piece of brown tape so that I could then check the color of the image in a specific area for the tape to see if the drying had finished.  </p>
 
-<p> My first step was to get an image of the machine's dial in the completed position (see above). Now, I could
-compare this image to the image from the webcam and use template matching to see if it was the case that the
-images matched to some degree </p>
+<div style="float:left; margin-left:15%">
+<img src="./images/done.jpg" height="300" width="300" />
+<p> The dial in the done position</p>
+</div>
 
-<p> OpenCV has a few different comparison methods built-in. I decided to use XXX because XXX </p>
+<div style="float:left; margin-left:100px">
+<img src="./images/not_done.jpg" height="300" width="300" />
+<p> The dial in the not done position</p>
+</div>
 
-<p> Notes: <p>
+<p>OpenCV has some pretty straightforward image processing methods which make detection like this relatively easy. After getting my images, I loaded them into OpenCV with: </p>
+<p> CODE </p>
+
+<p> Then, I cropped the image as to only get the part which I wanted to focus my color detection on with the following: </p>
+<p> CODE </p>
+
+<p> Now, with some color manipulation, we can get the mean color of the cropped area while in the done position. We will then compare this with the mean color of our input image to see if the dryer has finished. <p>
+<p> CODE </p>
+
+<p> With this data in hand, we can simply run the same manipulations to get the mean color of the image which shows the dial in the "on" position. Once we have this, we can compare any input image's mean color to the mean colors of the "on" and "off" images and see which it is closer to. </p>
+
+<p> However, this still didn't fully solve my issue as I needed some method for the program to actually tell me if the dryery had finished. Therefore, I decided to have it text me when it was done.</p>
+
+<p> To do this, I used Python's Simple Mail Transfer Protocol library to set up a TCP connection which gmail's outgoing SMTP server. Once this was established, I could simply use Verizon's SMS gateway to send myself texts from the Gmail server. </p>
+
+<p> I really recommend playing around with the OpenCV library and seeing what neat things you can do with it. Machine vision is an interesting subject with many, many use cases for fun weekend projects. </p>
+
+<p> <b>Notes: </b><p>
 <ul>
+	<li><p>For the full script, see: </p></li>
 	<li><p>I'm using OpenCV version 2.4.9.</p></li>
 	<li><p>Not sure how sensitive this is to lighthing - want to do some more experimenting</p></li>
+	<li><p>For a straightforward script-to-SMS tutorial, see: <a href="http://alextrle.blogspot.com/2011/05/how-to-send-sms-message-with-python.html">Alex Lee's Blog</a> </p></li>
+</ul>
+
+<p> <b>OpenCV/Machine Vision Learning Materials I Recommend:</b> <p>
+<ul>
+	<li><p><a href="http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_video/py_bg_subtraction/py_bg_subtraction.html#background-subtraction">Video background subtraction</a></p></li>
+	<li><p><a href="http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html#template-matching">Template matching in OpenCV</a></p></li>
+	<li><p><a href="http://tutorial.simplecv.org/en/latest/examples/parking.html">Detecting a car in a parking lot</a></p></li>
 </ul>
 
 </div>
