@@ -25,24 +25,37 @@ set up a webcam to watch the machine's dial and see if it had finished.</p>
 <p> My first step was to get an image of the machine's dial in the completed position (see below). Once I had that, I could
 compare it to the image from the webcam. Since the dial ticks were small, I added a piece of brown tape so that I could then check the color of the image in a specific area for the tape to see if the drying had finished.  </p>
 
-<div style="float:left; margin-left:15%">
+<div>
+<div style="float:left; margin-left:10%">
 <img src="./images/done.jpg" height="300" width="300" />
 <p> The dial in the done position</p>
 </div>
 
-<div style="float:left; margin-left:100px">
+<div style="margin-left: 700px">
 <img src="./images/not_done.jpg" height="300" width="300" />
 <p> The dial in the not done position</p>
 </div>
+</div>
 
 <p>OpenCV has some pretty straightforward image processing methods which make detection like this relatively easy. After getting my images, I loaded them into OpenCV with: </p>
-<p> CODE </p>
+
+<code>  
+done = cv2.imread("done.jpg")
+</code>
+<p></p>
+<code>
+not_done = cv2.imread("not_done.jpg")
+</code>
 
 <p> Then, I cropped the image as to only get the part which I wanted to focus my color detection on with the following: </p>
-<p> CODE </p>
+<code> done_tape = done.crop(500, 350, 150, 150)</code>
 
 <p> Now, with some color manipulation, we can get the mean color of the cropped area while in the done position. We will then compare this with the mean color of our input image to see if the dryer has finished. <p>
-<p> CODE </p>
+<code> tape_colored = done_tape.colorDistance(color.BROWN) </code>
+<p></p>
+<code> only_tape = done_tape - tape_colored</code>
+<p></p>
+<code> is_done_color = only_tape.meanColor()</code>
 
 <p> With this data in hand, we can simply run the same manipulations to get the mean color of the image which shows the dial in the "on" position. Once we have this, we can compare any input image's mean color to the mean colors of the "on" and "off" images and see which it is closer to. </p>
 
@@ -54,7 +67,7 @@ compare it to the image from the webcam. Since the dial ticks were small, I adde
 
 <p> <b>Notes: </b><p>
 <ul>
-	<li><p>For the full script, see: </p></li>
+	<li><p>For the rough script, see: <a href="https://github.com/edschembor/Blog-Resources"> Blog Resources </a></p></li>
 	<li><p>I'm using OpenCV version 2.4.9.</p></li>
 	<li><p>Not sure how sensitive this is to lighthing - want to do some more experimenting</p></li>
 	<li><p>For a straightforward script-to-SMS tutorial, see: <a href="http://alextrle.blogspot.com/2011/05/how-to-send-sms-message-with-python.html">Alex Lee's Blog</a> </p></li>
