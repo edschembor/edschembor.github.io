@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<title> Schembor Blog </title>
+<link rel="stylesheet" href="./blog.css" type="text/css" />
+</head>
+
+<body>
+
+<div class="banner">
+<a href="http://edschembor.github.io" class="banner_link"> Main Site </a>
+<a href="./index.html" class="banner_link"> Blog Home </a>
+</div>
+
+
+<div class="writing">
+<h1> PennApps Spring 2015 </h1>
+
+<center><figure>
+<img src="./images/pennapps_penguin.jpg"/>
+<figcaption> PennApps Signature Penguin</figcaption>
+</figure></center>
+
+<p> Last week, I had the privelage of attending my first PennApps. From start to finish, PennApps is essentially a normal hackathon on steroids. </p>
+
+<p> When I got accepted to PennApps, I didn't know anyone else who was going. Thanks to the hackathon's FB page, I was able to form a team with a 
+Sophomore from MIT and a genius high school student from Germany. After some initial discussion online, we were pretty set on doing a hack related to searching
+for cheap travel options.</p>
+
+<p> After checking-in and meeting up with my teammates, we headed towards the main autidorium for the opening ceremonies. There, the PennApps and Major League 
+Hacking joint staff did an awesome job of pumping everyone up for the upcoming 36 hours of sleeping. </p>
+
+<center><figure style="float:left">
+<img src="./images/pennapps_opening.jpg" />
+<figcaption> The Opening Ceremonies</figcaption>
+</figure></center>
+
+<center><figure>
+<img src="./images/oculus.jpg"/>
+<figcaption> Some Oculus Rift Development In The Room I Was In</figcaption>
+</figure></center>
+
+<p> My group found a nice spot in a relatively hidden area with a bunch of whiteboards. We were joined by a few other groups and the secluded nature of our spot 
+led to some nice inter-group chatting and collaboration. </p>
+
+<p> After some further discussion, my group's project was decided on: a search engine which would allow users to find the cheapest possible route between any two
+destinations in North America and Wester Europe. Our first task was to scrape the data for airplane/train/bus schedules. For North American buses, I was able to
+firgure out the url pattern of busbud.com, scrape the necessary data from the page's source with the urllib2 python library, and return it all as a nicely
+formatted JSON file. Another member of my group then used a similar method to scrape data for European train/buses, but with REST calls. We then used Kayak's
+API to get intercontinental flight data.</p>
+
+<p> One we had all of the data scraped based on the user's query, we were able to generate a graph of the possible travel options, where nodes represented cities
+and edges represented distinct travel options (ie. bus at 10AM, train at noon). Therefore, nodes were allowed to have many-to-many relationships. Once generated
+a graph from the data, we could simply run Dijkstra's algorithm to find the shortest path, using price as the edge weights. </p>
+
+<p> After 36 straigh hours of hacking (with a total of 5 hours of sleep) and 5 Red Bulls, it was time to present our finished project. The presentations were
+done science fair style, where each group is assigned a table and judges walk around and look at presentations. Unfortunately during one of our presentations,
+we had an issue were our scraping didn't gather sufficient data. Luckily we were able to show it off to some Facebook reps who were pretty interested.</p>
+
+<center><figure style="float:left">
+<img src="./images/pennapps_presentation.jpg" />
+<figcaption> The Presentation Stage</figcaption>
+</figure></center>
+
+<center><figure>
+<img src="./images/pennapps_board.jpg"/>
+<figcaption> Designing Our Algorithms/Scraping Methods</figcaption>
+</figure></center>
+
+<p> Even with 36 hours, there were some things which I wish we had had time to implement. One was a slider which would allow a user to choose if they want
+the results to be purely value-based (lowest travel cost), conviency based (lowest travel time), or some combination. Doing this would have just required
+changing the weights on the graph edges and the running the exact same shortest-path algorithm.</p>
+
+<p> All in all, PennApps was great experience! I got to meet so many exception and creative engineers, hear programmers from some companies I'd love to work at
+speak, and see some awesome hacks. I've now got some great motivation/experience to put towards PennApps Fall 2015.</p>
+
+
+</body>
+
+</html>
